@@ -1,10 +1,44 @@
 ---
-
+import BotonContacto from "./BotonContacto.astro"
+import "../styles/global.css"
 ---
 <header>
     <div class="hero">
         <h1>Hola, soy Eric Hernández</h1>
         <p>Diseñador gráfico, desarrollador web y técnico en mantenimiento informático.</p>
-        <a href="#contacto" class="btn">Contáctame</a>
+        <BotonContacto />
     </div>
 </header>
+
+<style>
+header {
+    background: var(--color-header-footer);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: var(--color-textohero);
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: var(--color-primario);
+    color: var(--color-textohero);
+    border-radius: 25px;
+    font-size: 1rem;
+}
+
+.hero .btn:hover {
+    background-color: var(--color-primario-hover);
+}
+</style>
