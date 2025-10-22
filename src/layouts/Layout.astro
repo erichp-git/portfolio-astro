@@ -1,0 +1,20 @@
+---
+const { title, description, Og_Url,Og_Image } = Astro.props
+---
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description}>
+    <title>{title}</title>
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Og_Url} />
+    <meta property="og:image" content={Og_Image} />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
