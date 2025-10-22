@@ -1,43 +1,60 @@
-# Astro Starter Kit: Minimal
+# Portfolio Profesional – Eric Hernández
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Este es un portfolio usando repositorio, contiene el código fuente del portfolio web.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+##  Descripción General
 
-## 🚀 Project Structure
+El sitio web está diseñado como una página estática desarrollada con tecnologías web fundamentales.
 
-Inside of your Astro project, you'll see the following folders and files:
+##  Tecnologías Utilizadas
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- **HTML5** – Estructura semántica del contenido.
+- **CSS3** – Estilos personalizados, diseño responsivo y uso de variables CSS.
+- **Flexbox y CSS Grid** – Para maquetación adaptable y diseño de componentes.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Estructura del Proyecto
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+portfolio/
+│
+├── index.html                 # Página principal
+├── css/
+│   ├── reset.css              # Reset de estilos por defecto
+│   ├── variables.css          # Definición de variables globales
+│   ├── fonts.css              # Tipografías personalizadas
+│   └── styles.css             # Estilos principales del sitio
+│
+└── assets/
+        ├── img/               # Imagenes de los proyectos
+        └── fonts/             # Localizacion de la fuente
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Secciones del Sitio
 
-## 🧞 Commands
+- **Encabezado (Header):** Presentación inicial.
+- **Sobre mí:** Perfil profesional, enfoque y experiencia general.
+- **Servicios:** Descripción de áreas de especialización:
+  - Diseño gráfico
+  - Desarrollo web
+  - Mantenimiento informático
+- **Proyectos:** Ejemplos prácticos con enlaces a versiones en línea o repositorios.
+- **Habilidades:** Herramientas y tecnologías dominadas.
+- **Contacto:** Información para establecer comunicación directa.
+- **Footer:** Información legal y derechos.
 
-All commands are run from the root of the project, from a terminal:
+## Proyectos Destacados
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+1. **Recreación de layout - ElegantThemes**  
+   [Ver proyecto](https://erichp.neocities.org/)  
+   *(En desarrollo)*
 
-## 👀 Want to learn more?
+2. **Recreación de página principal - Rockstar Games**  
+   [Repositorio en GitHub](https://github.com/erichp-git/rockstar)  
+   *(En desarrollo)*
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Contacto
+
+- **Correo electrónico:** erichp.1991@gmail.com  
+- **GitHub:** [https://github.com/erichp-git](https://github.com/erichp-git)
+
+## Licencia
+
+Este proyecto se distribuye **sin una licencia específica**. Su contenido no está habilitado para distribución o uso comercial sin autorización previa.
