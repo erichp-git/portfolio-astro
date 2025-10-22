@@ -1,19 +1,22 @@
 ---
 import "../styles/global.css"
+import { Image } from "astro:assets";
+import proyecto1 from "../../public/img/proyecto1.png";
+import proyecto2 from "../../public/img/proyecto2.png";
 ---
 <section id="proyectos">
     <h2>Proyectos</h2>
     <div class="grid-proyectos">
         <!-- Proyecto 1 -->
         <div class="proyecto">
-            <img src="assets/img/proyecto1.png" alt="Proyecto 1">
+            <Image src={proyecto1} alt="Proyecto 1" />
             <h3>Proyecto 1</h3>
             <p>Recreacion de un layout de ElegantThemes. <br><em>Todavía en construcción.</em></p>
             <a href="https://erichp.neocities.org/" class="btn" target="_blank">Ver proyecto</a>
         </div>
         <!-- Proyecto 2 -->
         <div class="proyecto">
-            <img src="assets/img/proyecto2.png" alt="Proyecto 2">
+            <Image src={proyecto2} alt="Proyecto 2" />
             <h3>Proyecto 2</h3>
             <p>Recreacion de la pagina principal de Rockstar.<br> <em>Todavía en construcción.</em></p>
             <a href="https://github.com/erichp-git/rockstar" class="btn"  target="_blank">Ver proyecto</a>
@@ -27,36 +30,36 @@ import "../styles/global.css"
         padding: 50px 20px;
         text-align: center;
     }
-    
+
     #proyectos h2 {
         font-size: 2rem;
         margin-bottom: 20px;
     }
-    
+
     .grid-proyectos {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
         margin-top: 30px;
     }
-    
+
     .proyecto {
         background-color: var(--color-fondo);
         padding: 20px;
         border-radius: 10px;
         text-align: center;
     }
-    
+
     .proyecto img {
         width: 100%;
         height: auto;
         border-radius: 10px;
     }
-    
+
     .proyecto h3 {
         margin-top: 15px;
     }
-    
+
     .proyecto .btn {
         margin-top: 10px;
     }
