@@ -1,0 +1,33 @@
+---
+import '../styles/global.css'
+---
+<button id="toggle-dark">🌙</button>
+
+<style>
+    #toggle-dark {
+    position: absolute; 
+    top: 1rem; 
+    right: 1rem; 
+    z-index: 1000;
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleBtn = document.getElementById('toggle-dark');
+    if (!toggleBtn) return;
+    toggleBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+        localStorage.setItem('modo', document.body.classList.contains('dark-mode') ? 'oscuro' : 'claro');
+    });
+    if (localStorage.getItem('modo') === 'oscuro') {
+        document.body.classList.add('dark-mode');
+        toggleBtn.textContent = '☀️';
+    }
+});
+</script>
