@@ -1,0 +1,41 @@
+---
+import "../styles/global.css"
+---
+<section id="servicios">
+    <h2>Servicios</h2>
+    <div class="servicio">
+        <h3>Diseño Gráfico</h3>
+        <p>Identidad visual, branding, diseño de logotipos, materiales publicitarios.</p>
+    </div>
+    <div class="servicio">
+        <h3>Desarrollo Web</h3>
+        <p>Páginas responsivas, optimizadas y seguras con tecnologías modernas.</p>
+    </div>
+    <div class="servicio">
+        <h3>Mantenimiento de Ordenadores</h3>
+        <p>Diagnóstico, limpieza, optimización y reparación de hardware/software.</p>
+    </div>
+</section>
+
+<style>
+    #servicios {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px 20px;
+        background-color: var(--color-fondo);
+    }
+    
+    #servicios .servicio {
+        max-width: 300px;
+        text-align: center;
+    }
+    
+    #servicios h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    
+    #servicios p {
+        font-size: 1rem;
+    }
+</style>
