@@ -11,4 +11,6 @@ export default defineConfig({
         layout: "constrained",
         remotePatterns: [{ protocol: "https" }],
       },
+    site: "https://erichp-git.github.io",
+    base: "portfolio-astro",
 });
